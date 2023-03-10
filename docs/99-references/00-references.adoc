@@ -35,15 +35,21 @@ ATTENTION: labels have to be non-numeric.
 **B**
 
 - [[[brewer,Brewer 2000]]] Eric Brewer, Towards Robust Distributed Systems, PODC Keynote, July-19-2000
+- [[[beyer,Beyer et al 2016]]]  Betsy Beyer, Chris Jones, Niall Richard Murphy, Jennifer Petoff: Site Reliability Engineering, O'Reilly Media, 2016, ISBN 978-1-49192-912-4
 
 **E**
 
 - [[[evansddd,Eric Evans 2003]]] Eric Evans: Domain-Driven Design: Tackling Complexity in the Heart of Software, Addison- Wesley Professional, 2003
 
+**F**
+
+- [[[fowlerSusan,Susan Fowler 2016]]] Susan Fowler: Production-Ready Microservices, O'Reilly Media, 2016, ISBN 978-1-49196-592-4
+
 **H**
 
 - [[[hamilton,Hamilton 2007]]] James Hamilton, On Designing and Deploying Internet-Scale Services, 21st LISA Conference 2007
 - [[[hanmer,Hanmer 2007]]] Robert S. Hanmer, Patterns for Fault Tolerant Software, Wiley, 2007
+- [[[hidalgo,Hidalgo 2020]]] Alex Hidalgo: Implementing Service Level Objectives, O'Reilly Media, 2020, ISBN 978-1-49207-676-6
 - [[[hohpe,Hohpe, Woolf 2003]]] Gregor Hohpe, Bobby Woolf: Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions, Addison-Wesley, 2003, ISBN 978-0-32120-068-6
 - [[[humblecd,Humble, et al. 2010]]] Jez Humble, David Farley: Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation, Addison-Wesley, 2010, ISBN 978-0-32160-191-9
 - [[[humbleacd,Humble, et al. 2014]]] Jez Humble, Barry O'Reilly, Joanne Molesky: Lean Enterprise: Adopting Continuous Delivery, DevOps, and Lean Startup at Scale, O’Reilly 2014, ISBN 978-1-44936-842-5
