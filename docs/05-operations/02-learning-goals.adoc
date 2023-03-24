@@ -6,7 +6,8 @@ Dieser Block soll TODO
 
 [[LZ-5-1]]
 ==== LZ 5-1: Die Herausforderungen im Betrieb von Microservices verstehen
-TODO
+* Die TN verstehen, dass der Betrieb von Microservices deutlich schwieriger ist als der eines Monolithen. In einer monolithischen Architektur sind alle Komponenten der Anwendung eng miteinander verknüpft und laufen innerhalb eines einzigen Prozesses. Das Monitoring ist daher einfacher, da alle Metriken von einer einzigen Quelle gesammelt werden können. In einer Microservices-Architektur hingegen besteht die Anwendung aus mehreren unabhängigen Services, von denen jeder zusätzlich noch seine eigene(n) Datenbank(en) hat. Da diese Services verteilt sind, wird das Monitoring komplexer, da es mehr Komponenten zu verfolgen und zu überwachen gibt.
+* Die TN verstehen, dass es bei einer Microservices-Architektur neben des Monitorings einzelner Services wichtig ist, zusätzlich die Interaktionen zwischen Services zu überwachen.
 
 [[LZ-5-2]]
 ==== LZ 5-2: Die Telemetrie-Bausteine Logs, Metriken und Traces verstehen
@@ -17,17 +18,18 @@ TODO
 
 [[LZ-5-3]]
 ==== LZ 5-3: Telemetrie nutzen, um kritische Geschäftsfälle zu monitoren
-* Die TN verstehen, dass sie Telemetriedaten unterschiedlich auswerten müssen: Geschäftsmetriken ("ist etwas kaputt?") und Analysedaten ("was ist kaputt?")
-* Die TN verstehen, wie man für die wichtigsten Use Cases eines Systems betriebliche Anforderungen (z.B. Verfügbarkeit, Latenz, usw.) definiert, z.B. mithilfe von Service Level Objectives (SLOs)
-* Die TN kennen unterschiedliche Möglichkeiten die betrieblichen Anforderungen von den wichtigsten Use Cases zu monitoren, z.B. mit synthetischen Clients, Enduser-Monitoring, Loadbalancer- oder Service-Metriken (SLIs).
-* Die TN kennen das Konzept des Error Budgets
-* Die TN wissen, wie man Alarme definieren kann, sodass Probleme rechtzeitig erkannt werden können und gleichzeitig keine Fehlalarme ausgelöst werden
+* Die TN verstehen, dass Telemetriedaten unterschiedlich ausgewertet werden müssen: a) verstehen, ob das System ein Problem hat und b) im Falle eines Problems verstehen, was der Grund für das Problem ist
+* Die TN wissen, wie man Metriken definiert, die eine Aussage treffen, ob das System ein Problem hat. Microservices haben sehr viele individuelle Services und Interaktionen zwischen diesen, aber das Monitoring muss davon abstrahieren und erkennen, ob das System als Ganzes noch gesund ist oder nicht. Die Gesundheit des Systems ist auch immer eng verbunden mit der Gesundheit der Fachlichkeit / Business, die das System unterstützt, z.B. schaut man nicht auf individuelle Metriken, sondern auf die wichtigsten Use Cases, wie z.B. "neue Registrierungen", "Anzahl der verkauften Artikel", usw. Die TN wissen, welche Gedanken sie sich machen müssen um entsprechende Dashboards zu bauen
+* Die TN verstehen, wie man für die wichtigsten Use Cases eines Systems betriebliche Anforderungen (z.B. Verfügbarkeit, Latenz, usw.) definiert, z.B. mithilfe von Service Level Objectives (SLOs). Dazu gehört auch, dass sie wissen, wie man mit den Stakeholdern angemessene SLOs definieren kann, z.B. welche Verfügbarkeiten oder Latenzanforderungen Sinn machen. In diesem Rahmen lernen sie das Konzept des Error Budgets kennen.
+* Die TN kennen die Problematik, dass ein einzelner Service nur so verfügbar sein kann, wie die Summe seiner Abhängigkeiten
+* Die TN kennen unterschiedliche Möglichkeiten und deren Vor- und Nachteile, die betrieblichen Anforderungen von den wichtigsten Use Cases zu monitoren, z.B. mit synthetischen Clients, Enduser-Monitoring, Loadbalancer- oder Service-Metriken (SLIs).
+* Die TN wissen, wie man Alarme definieren kann, sodass Probleme rechtzeitig erkannt werden können und gleichzeitig keine Fehlalarme ausgelöst werden. Diese Alarme orientieren sich an der Error Budget Burn Rate
 
 [[LZ-5-4]]
 ==== LZ 5-4: Major Incident Response und Post-Mortems
 * Die TN kennen Beispiele, wie man mithilfe von Logs, Metriken und Traces Probleme analysieren kann
 * Die TN kennen die Kernpunkte eines Major Incident Prozesses
-* Die TN kennen Möglichkeiten, wie man Major Incident Prozesse einüben kann, z.B. Game Days oder Fire Drills
+* Die TN kennen Möglichkeiten, wie man Major Incident Prozesse einüben kann, z.B. Game Days oder Firedrills
 
 
 // end::DE[]
